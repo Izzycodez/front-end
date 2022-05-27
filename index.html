@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <header>
+        <h1>izzymaths</h1>
+        <nav> 
+                <a href="#simpleMaths">simple arithmetics</a>
+                <a href="#statistics">statistics</a>    
+        </nav>
+    </header>
+
+    <main>
+        <section id="simpleMaths">
+           <h2>  simple arithmetics</h2>
+           <div id="output"> 
+              <p id="inputs"></p>
+              <div id="answer"></div>
+           </div>  
+           <div id="cal-body">      
+                <button onclick="display(1)" class="display">1</button>
+                <button  onclick="display(2)" class="display">2</button>
+                <button  onclick="display(3)" class="display">3</button>
+                <button  onclick="display(4)" class="display">4</button>
+                <button  onclick="display(5)" class="display">5</button>
+                <button  onclick="display(6)" class="display">6</button>
+                <button  onclick="display(7)" class="display">7</button>
+                <button onclick="display(8)" class="display">8</button>
+                <button onclick="display(9)" class="display">9</button>
+                <button onclick="del()">delete</button>
+                <button onclick="ac()" id="ac">AC</button>
+                <button onclick="display('.')" class="display">.</button>
+                <button onclick="display(0)" class="display">0</button>
+                <button onclick="display('-')" class="display">-</button>
+                <button onclick="empty()">clear</button>
+                <button onclick="display('+')" class="display">+</button>
+                <button onclick="display('*')" class="display">×</button>
+                <button onclick="display('/')" class="display">÷</button>
+                <button onclick="calculate()" id="equal">=</button>
+            </div> 
+        </section>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
